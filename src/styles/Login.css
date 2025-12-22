@@ -1,0 +1,33 @@
+
+.login-form {
+    
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+ 
+}
+
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #006D59;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.forget{
+  color: #006D59;
+}
