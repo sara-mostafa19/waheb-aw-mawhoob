@@ -1,9 +1,25 @@
+.login-container {
+  min-height: 100vh;
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.login-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  height: 100%;
+}
 
 .login-form {
-    
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
- 
+  position: relative;
+  z-index: 2;
+  background-color: white;
 }
+
 
 
 .login-form input[type="text"],

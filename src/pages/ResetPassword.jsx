@@ -24,7 +24,6 @@ function ResetPassword() {
       return;
     }
 
-    // دلوقتي مفيش API
     setSuccess("تم تغيير كلمة المرور بنجاح");
 
     setTimeout(() => {
@@ -33,9 +32,9 @@ function ResetPassword() {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center p-5">
+    <div className="login-container d-flex justify-content-center align-items-center p-5">
       <form
-        className="login-form p-5 rounded-4"
+        className="login-form px-5 py-4 rounded-4"
         dir="rtl"
         onSubmit={handleSubmit}
       >

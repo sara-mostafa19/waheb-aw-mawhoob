@@ -52,8 +52,8 @@ function Login() {
   };
 
   return (
-    <div className="login-container d-flex justify-content-center align-items-center align-content-center p-5">
-      <form className="login-form p-5 rounded-4" onSubmit={handleSubmit} dir="rtl">
+    <div className="login-container login-container-overlay d-flex justify-content-center align-items-center align-content-center p-5">
+      <form className="login-form px-5 py-3 rounded-4" onSubmit={handleSubmit} dir="rtl">
         <h1 className="text-center my-4">تسجيل الدخول</h1>
         <p className="text-muted text-center mb-4" >
           اهلا بك في واهب ولا موهوب!

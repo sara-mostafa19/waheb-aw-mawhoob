@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "../../src/styles/Register.css"; // هنعمل ملف CSS منفصل
+import "../styles/Register.css"; // هنعمل ملف CSS منفصل
+import { Link } from "react-router-dom";
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -65,7 +66,6 @@ function Register() {
         const data = await response.json();
         setSuccess("تم التسجيل بنجاح!");
         console.log("Registration successful:", data);
-    
       } else {
         const errorData = await response.json();
         setError(errorData.message || "فشل في التسجيل");
@@ -80,29 +80,42 @@ function Register() {
 
   return (
     <div className="register-container  d-flex justify-content-center align-items-center p-4">
-      <form className="register-form p-4 rounded-4 " onSubmit={handleSubmit} dir="rtl">
+      <form
+        className="register-form px-5 py-4 rounded-4 "
+        onSubmit={handleSubmit}
+        dir="rtl"
+      >
         <h1 className="text-center my-4">إنشاء حساب جديد</h1>
-        <p className="text-muted text-center mb-4">!اهلا بك في واهب ولا موهوب</p>
+        <p className="text-muted text-center mb-4">
+          !اهلا بك في واهب ولا موهوب
+        </p>
+        <div className="row">
+          <div className="col-md-6 mb-3 mb-md-0">
+            <label className="form-label">الاسم</label>
+            <input
+              type="text"
+              className="form-control"
+              name="firstName"
+              placeholder="اكتب بالعربية"
+              value={formData.firstName}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div className="name-fields d-flex gap-4" >
-          
-          <input
-          
-            type="text"
-            name="firstName"
-            placeholder="الاسم بالعربي"
-            value={formData.firstName}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="lastName"
-            placeholder="اسم العائلة بالعربي"
-            value={formData.lastName}
-            onChange={handleChange}
-          />
+          <div className="col-md-6">
+            <label className="form-label">اسم العائلة</label>
+            <input
+              type="text"
+              className="form-control"
+              name="lastName"
+              placeholder="اكتب بالعربية"
+              value={formData.lastName}
+              onChange={handleChange}
+            />
+          </div>
         </div>
 
+        <label className="mb-2">رقم الهاتف</label>
         <input
           type="text"
           name="phone"
@@ -110,17 +123,17 @@ function Register() {
           value={formData.phone}
           onChange={handleChange}
         />
+        <label className="mb-2">الرقم القومي</label>
         <input
-        className="my-2"
+          className="mb-2"
           type="text"
           name="nationalId"
           placeholder="ادخل رقمك القومي"
           value={formData.nationalId}
           onChange={handleChange}
         />
-        <p className="text-muted">نوع الحساب</p>
+        <label className="mb-2">نوع الحساب</label>
         <div className="account-type d-flex gap-4 mb-3">
-          
           <label className="d-flex align-items-center gap-2">
             <input
               type="radio"
@@ -141,7 +154,7 @@ function Register() {
             />
             موهوب
           </label>
-          <label  className="d-flex align-items-center gap-2">
+          <label className="d-flex align-items-center gap-2">
             <input
               type="radio"
               name="accountType"
@@ -152,6 +165,7 @@ function Register() {
             مسؤول
           </label>
         </div>
+        <label className="mb-2">كلمة المرور</label>
 
         <input
           type="password"
@@ -160,6 +174,7 @@ function Register() {
           value={formData.password}
           onChange={handleChange}
         />
+        <label className="mb-2">كرر كلمة المرور</label>
         <input
           type="password"
           name="confirmPassword"
@@ -169,9 +184,12 @@ function Register() {
         />
 
         <label className="agree d-flex justify-content-between">
-        <p className="w-75">          بإنشائك حساب، فهذا يعني أنك توافق على الشروط والأحكام وسياسة الخصوصية
-          الخاصة بنا.</p>
-            <input
+          <p className="w-75">
+            {" "}
+            بإنشائك حساب، فهذا يعني أنك توافق على الشروط والأحكام وسياسة
+            الخصوصية الخاصة بنا.
+          </p>
+          <input
             type="checkbox"
             name="agree"
             checked={formData.agree}
@@ -187,6 +205,14 @@ function Register() {
         <button type="submit" disabled={loading}>
           {loading ? "جاري التسجيل..." : "سجل الآن!"}
         </button>
+        <div className="text-center mt-4">
+          <p className="text-muted mb-0">
+            هل لديك حساب؟{" "}
+            <Link to="/login" className="fw-bold text-decoration-none login">
+              تسجيل الدخول
+            </Link>
+          </p>
+        </div>
       </form>
     </div>
   );

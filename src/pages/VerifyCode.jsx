@@ -27,9 +27,9 @@ function VerifyCode() {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center p-5 ">
+    <div className="login-container d-flex justify-content-center align-items-center p-5 ">
       <form
-        className="login-form p-5 rounded-4 text-center"
+        className="login-form px-5 py-4 rounded-4 text-center"
         dir="rtl"
         onSubmit={handleSubmit}
       >
@@ -58,7 +58,7 @@ function VerifyCode() {
             />
           ))}
         </div>
-        <div className="d-flex my-2 gap-1">
+        <div className="d-flex my-2 gap-1 text-center">
             <p className="text-muted">لم تستلم الرمز؟ </p>
             <p  style={{ color: "#002E25" }}>اضغط لإعادة الإرسال</p>
         </div>

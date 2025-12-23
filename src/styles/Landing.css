@@ -1,0 +1,191 @@
+/* Navbar */
+.nav-pill {
+  background-color: #006D59;
+}
+
+/* Hero */
+.hero-section {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  min-height: 70vh;
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(137, 135, 135, 0.85);
+  z-index: 1;
+}
+
+.hero-title {
+  color: #003C31;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* Buttons colors */
+.btn-success {
+  background-color: #006D59;
+  border-color: #006D59;
+}
+
+.btn-outline-success {
+  color: #006D59;
+  border-color: #006D59;
+}
+
+/* How it works */
+.work{
+    background-color: #E8E8E8;
+}
+.work-pill {
+  font-size: 18px;
+  background-color: #006D59;
+}
+
+.reciever-pill {
+    background-color: #E8E8E8;
+}
+.work-pill,
+.reciever-pill {
+  transition: 
+    background-color 0.5s ease,
+    color 0.35s ease,
+    transition 0.25s ease;
+}
+
+
+/* ===== Steps ===== */
+.step-pill {
+  border: 2px solid #006b55;
+  border-radius: 50px;
+  padding: 20px 30px;
+}
+
+.step-number {
+  background-color: #006b55;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+/* ===== Donation Types ===== */
+.donation-card {
+  background-color: #E6F0EE;
+  border-radius: 20px;
+  padding: 30px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.donation-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon circle */
+.icon-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+  color: #006D59;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* Link */
+.donation-link {
+  color: #006D59;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.donation-link:hover {
+  transform: translateX(-5px);
+}
+/* ===== Stats Section ===== */
+.stats-section {
+    height: 40vh;
+  background-color:#E6F0EE;
+  padding: 80px 0;
+}
+
+.stats-number {
+  color: #003c31;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.stats-text {
+  color: #003c31;
+  font-size: 20px;
+}
+/* ===== Testimonials ===== */
+.testimonial-card {
+  border: 2px solid #006D59;
+  border-radius: 20px;
+  padding: 25px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  color: #333;
+  line-height: 1.8;
+}
+
+/* ===== Trust Section ===== */
+.trust-section {
+  padding: 80px 0;
+}
+
+.trust-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #B0D2CC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #006d59;
+  font-size: 28px;
+}
+
+.trust-text {
+  max-width: 520px;
+
+  line-height: 1.8;
+}
+
+
+.footer {
+  background-color: #E6F0EE;
+  padding: 80px 0;
+}
+
+

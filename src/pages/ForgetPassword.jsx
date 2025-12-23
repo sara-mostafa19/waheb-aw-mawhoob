@@ -8,12 +8,12 @@ function ForgotPassword() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // دلوقتي مجرد انتقال صفحة
+
     navigate("/verify-code");
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center p-5">
+    <div className=" login-container d-flex justify-content-center align-items-center p-5">
       <form
         className="login-form p-5 rounded-4"
         dir="rtl"
@@ -24,6 +24,7 @@ function ForgotPassword() {
           أدخل رقمك لإرسال رمز مكون من 4 أرقام للتحقق من هويتك.
         </p>
 
+        <label className="mb-2">رقم الهاتف</label>
         <input
           type="text"
           placeholder="رقم الهاتف"
