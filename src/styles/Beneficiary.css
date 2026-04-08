@@ -1,0 +1,266 @@
+.beneficiary-page {
+  padding-top: 24px;
+}
+.beneficiary-header {
+  width: 85%;
+  margin: 0 auto 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.beneficiary-avatar {
+  position: absolute;
+  left: 0;
+}
+
+.beneficiary-avatar img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.beneficiary-nav {
+  width: 65%;
+  height: 70px;
+  background: #006D59;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: white;
+  border-radius: 2px;
+}
+
+.beneficiary-hero {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.beneficiary-hero-image {
+  width: 100%;
+  height: 515px;
+  object-fit: cover;
+  display: block;
+}
+
+.beneficiary-hero-overlay {
+  background-color: rgba(0, 0, 0, 0.158);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficiary-hero-overlay h1 {
+  color: #002E25;
+  font-size: 58px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.beneficiary-hero-overlay p {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 26px;
+}
+
+.beneficiary-hero-overlay button {
+  background: #006D59;
+  color: white;
+  border: none;
+  border-radius: 28px;
+  padding: 10px 48px;
+  font-size: 19px;
+  cursor: pointer;
+}
+.beneficiary-intro {
+  width: 100%;
+  text-align: center;
+  padding: 46px 20px 40px;
+}
+
+.beneficiary-intro-tag {
+  display: inline-block;
+  background: #E6F0EE;
+  color: #006351;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 22px;
+  border-radius: 18px;
+  margin-bottom: 22px;
+}
+
+.beneficiary-intro-title {
+  font-size: 58px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.beneficiary-intro-title span {
+  color: #006D59;
+}
+
+.beneficiary-intro-text {
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 34px;
+  line-height: 1.6;
+}
+
+.beneficiary-intro-btn {
+  background: transparent;
+  color: #006D59;
+  border: 2px solid #006D59;
+  border-radius: 22px;
+  padding: 10px 70px;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.beneficiary-intro-btn:hover {
+  background: #006D59;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 109, 89, 0.25);
+}
+.beneficiary-intro-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.beneficiary-cards-section {
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px 0 40px;
+}
+
+.beneficiary-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.beneficiary-card {
+  background: #f8f8f8;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+}
+
+.beneficiary-card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.beneficiary-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #fff;
+}
+
+.beneficiary-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.beneficiary-badge.available {
+  background: #e5f4ee;
+  color: #1b8d70;
+}
+
+.beneficiary-badge.unavailable {
+  background: #fde9e9;
+  color: #e05b5b;
+}
+
+.beneficiary-card-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.beneficiary-card-text {
+  font-size: 13px;
+  color: #8d8d8d;
+  line-height: 1.6;
+  min-height: 48px;
+  margin-bottom: 14px;
+}
+
+.beneficiary-card-btn {
+  width: 100%;
+  height: 38px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.beneficiary-card-btn.active {
+  background: #006D59;
+  color: #fff;
+}
+
+.beneficiary-card-btn.active:hover {
+  background: #005646;
+}
+
+.beneficiary-card-btn.disabled {
+  background: #cfcfcf;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.beneficiary-more {
+  text-align: center;
+  color: #006D59;
+  font-size: 15px;
+  margin-top: 18px;
+  cursor: pointer;
+}

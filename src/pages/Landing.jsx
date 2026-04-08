@@ -303,9 +303,9 @@ function Landing() {
     <p className="text-muted mb-5 fs-5">
       انضم إلى آلاف المستخدمين الذين يثقون بنا
     </p>
-
     <div className="d-flex justify-content-center gap-3 flex-wrap">
       <Link
+
         to="/register?type=beneficiary"
         className="btn btn-outline-success rounded-pill px-5 py-2 fw-bold"
       >
