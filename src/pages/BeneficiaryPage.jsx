@@ -8,6 +8,7 @@ import sweaterImg from "../assets/sweeter.png";
 import calculatorImg from "../assets/calc.png";
 import bagImg from "../assets/bag.png";
 import book2 from "../assets/book2.png";
+import Footer from "../components/Footer";
 
 export default function Beneficiary() {
   return (
@@ -70,23 +71,22 @@ export default function Beneficiary() {
       </section>
       <section className="beneficiary-cards-section">
         <div className="beneficiary-cards-grid">
-          <div className="beneficiary-card">
+             <div className="beneficiary-card">
             <div className="beneficiary-card-image-wrapper">
-              <span className="beneficiary-badge available">متاحة</span>
+              <span className="beneficiary-badge unavailable">غير متاحة</span>
               <img
-                src={book1}
-                alt="كتب مدرسية"
+                src={sweaterImg}
+                alt="ملابس شتوية"
                 className="beneficiary-card-image"
               />
             </div>
-            <h3 className="beneficiary-card-title">
-              كتب مدرسية - الصف الرابع الابتدائي
-            </h3>
-            <p className="beneficiary-card-text">
-              مجموعة كتب مدرسية للصف الرابع الابتدائي بحالة جيدة للعام الدراسي
-              الحالي
+            <h5 className="m-4">
+              ملابس شتوية - أطفال (6-9 سنوات)
+            </h5>
+            <p className="text-muted text-end me-4">
+              بولوفرات شتوية بحالة جيدة مناسبة للأطفال من 6 إلى 9 سنوات
             </p>
-            <button className="beneficiary-card-btn active">اطلب الآن</button>
+            <button className="beneficiary-card-btn disabled">اطلب الآن</button>
           </div>
 
           <div className="beneficiary-card">
@@ -98,46 +98,47 @@ export default function Beneficiary() {
                 className="beneficiary-card-image"
               />
             </div>
-            <h3 className="beneficiary-card-title">ملابس يومية - سيدات (L)</h3>
-            <p className="beneficiary-card-text">
+            <h5 className="m-4">ملابس يومية - سيدات (L)</h5>
+            <p className="text-muted text-end me-4">
               ملابس استخدام يومي بحالة مناسبة للسيدات مقاس L
             </p>
             <button className="beneficiary-card-btn active">اطلب الآن</button>
           </div>
-
-          <div className="beneficiary-card">
+   <div className="beneficiary-card">
             <div className="beneficiary-card-image-wrapper">
-              <span className="beneficiary-badge unavailable">غير متاحة</span>
+              <span className="beneficiary-badge available">متاحة</span>
               <img
-                src={sweaterImg}
-                alt="ملابس شتوية"
+                src={book1}
+                alt="كتب مدرسية"
                 className="beneficiary-card-image"
               />
             </div>
-            <h3 className="beneficiary-card-title">
-              ملابس شتوية - أطفال (6-9 سنوات)
-            </h3>
-            <p className="beneficiary-card-text">
-              بولوفرات شتوية بحالة جيدة مناسبة للأطفال من 6 إلى 9 سنوات
+            <h5 className="m-4">
+              كتب مدرسية - الصف الرابع الابتدائي
+            </h5>
+            <p className="text-muted text-end me-4">
+              مجموعة كتب مدرسية للصف الرابع الابتدائي بحالة جيدة للعام الدراسي
+              الحالي
             </p>
-            <button className="beneficiary-card-btn disabled">اطلب الآن</button>
+            <button className="beneficiary-card-btn active">اطلب الآن</button>
           </div>
-
-          <div className="beneficiary-card">
+            <div className="beneficiary-card">
             <div className="beneficiary-card-image-wrapper">
-              <span className="beneficiary-badge unavailable">غير متاحة</span>
+              <span className="beneficiary-badge available">متاحة</span>
               <img
-                src={calculatorImg}
-                alt="آلة حاسبة"
+                src={book2}
+                alt="كتب مدرسية"
                 className="beneficiary-card-image"
               />
             </div>
-            <h3 className="beneficiary-card-title">آلة حاسبة علمية</h3>
-            <p className="beneficiary-card-text">
-              آلة حاسبة علمية مناسبة لطلبة المرحلة الإعدادية والثانوية بحالة
-              جيدة وتعمل بكفاءة
+            <h5 className="m-4">
+              كتب مدرسية - الصف الثاني الإعدادي
+            </h5>
+            <p className="text-muted text-end me-4">
+              مجموعة كتب مدرسية للصف الثاني الإعدادي تشمل المواد الأساسية بحالة
+              جيدة
             </p>
-            <button className="beneficiary-card-btn disabled">اطلب الآن</button>
+            <button className="beneficiary-card-btn active">اطلب الآن</button>
           </div>
 
           <div className="beneficiary-card">
@@ -149,35 +150,36 @@ export default function Beneficiary() {
                 className="beneficiary-card-image"
               />
             </div>
-            <h3 className="beneficiary-card-title">شنطة مدرسية</h3>
-            <p className="beneficiary-card-text">
+            <h5 className="m-4">شنطة مدرسية</h5>
+            <p className="text-muted text-end me-4">
               شنطة مدرسية بحالة جيدة مناسبة لطلبة المرحلة الابتدائية
             </p>
             <button className="beneficiary-card-btn disabled">اطلب الآن</button>
           </div>
-
-          <div className="beneficiary-card">
+              <div className="beneficiary-card">
             <div className="beneficiary-card-image-wrapper">
-              <span className="beneficiary-badge available">متاحة</span>
+              <span className="beneficiary-badge unavailable">غير متاحة</span>
               <img
-                src={book2}
-                alt="كتب مدرسية"
+                src={calculatorImg}
+                alt="آلة حاسبة"
                 className="beneficiary-card-image"
               />
             </div>
-            <h3 className="beneficiary-card-title">
-              كتب مدرسية - الصف الثاني الإعدادي
-            </h3>
-            <p className="beneficiary-card-text">
-              مجموعة كتب مدرسية للصف الثاني الإعدادي تشمل المواد الأساسية بحالة
-              جيدة
+            <h5 className="m-4">آلة حاسبة علمية</h5>
+            <p className="text-muted text-end me-4">
+              آلة حاسبة علمية مناسبة لطلبة المرحلة الإعدادية والثانوية بحالة
+              جيدة وتعمل بكفاءة
             </p>
-            <button className="beneficiary-card-btn active">اطلب الآن</button>
+            <button className="beneficiary-card-btn disabled">اطلب الآن</button>
           </div>
-        </div>
 
-        <div className="beneficiary-more">عرض المزيد من التبرعات &lt;</div>
+        
+        </div>
+        
+
+        <a className="beneficiary-more text-decoration-none " >عرض المزيد من التبرعات &gt;</a>
       </section>
+      <Footer></Footer>
     </div>
   );
 }

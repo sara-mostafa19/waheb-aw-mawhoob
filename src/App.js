@@ -6,6 +6,7 @@ import VerifyCode from "./pages/VerifyCode";
 import ResetPassword from "./pages/ResetPassword";
 import Landing from "./pages/Landing";
 import BeneficiaryPage from "./pages/BeneficiaryPage";
+import DonorPage from "./pages/DonorPage";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/verify-code" element={<VerifyCode />} />
         <Route path="/reset-password" element={<ResetPassword />} />
-<Route path="/beneficiary" element={<BeneficiaryPage />} />
+        <Route path="/beneficiary" element={<BeneficiaryPage />} />
+        <Route path="/donor" element={<DonorPage/>}/>
 
       </Routes>
     </BrowserRouter>
